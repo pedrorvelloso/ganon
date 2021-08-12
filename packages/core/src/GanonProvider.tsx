@@ -1,6 +1,9 @@
 import React from 'react'
-import { ThemeProvider } from '@ganon/styled'
+import { ThemeProvider, GlobalStyles } from '@ganon/styled'
 
 export const GanonProvider: React.FC = ({ children }) => (
-  <ThemeProvider>{children}</ThemeProvider>
+  <ThemeProvider>
+    {children}
+    <GlobalStyles />
+  </ThemeProvider>
 )

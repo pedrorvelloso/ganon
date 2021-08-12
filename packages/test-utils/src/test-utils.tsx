@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 
 import { render, RenderOptions } from '@testing-library/react'
-import { GanonProvider } from '@ganon/hyrule'
+import { GanonProvider } from '@ganon/core'
 
 const Providers: React.FC = ({ children }) => {
   return <GanonProvider>{children}</GanonProvider>

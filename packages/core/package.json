@@ -1,5 +1,5 @@
 {
-  "name": "@ganon/hyrule",
+  "name": "@ganon/core",
   "version": "0.0.1",
   "description": "React UI components for speedrun websites",
   "license": "MIT",

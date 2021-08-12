@@ -2,6 +2,7 @@
   "name": "@ganon/test-utils",
   "version": "0.0.1",
   "license": "MIT",
+  "private": true,
   "main": "src/index.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

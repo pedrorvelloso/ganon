@@ -1,4 +1,4 @@
-import { GanonProvider } from '@ganon/hyrule'
+import { GanonProvider } from '@ganon/core'
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

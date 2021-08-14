@@ -1,5 +1,11 @@
 # @ganon/core
 
+## 0.2.0
+
+### Minor Changes
+
+- update core dependencies
+
 ## 0.1.1
 
 ### Patch Changes

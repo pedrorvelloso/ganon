@@ -19,6 +19,7 @@
     "access": "public"
   },
   "scripts": {
+    "start": "nodemon --watch src --exec yarn build -e ts,tsx",
     "prebuild": "rimraf dist",
     "build": "concurrently yarn:build:*",
     "test": "jest --env=jsdom --passWithNoTests",
@@ -32,6 +33,8 @@
   },
   "devDependencies": {
     "@ganon/styled": "0.1.0",
+    "@ganon/theme": "0.0.1",
+    "@ganon/theme-utils": "0.0.1",
     "react": "^17.0.2"
   },
   "dependencies": {
@@ -39,6 +42,8 @@
   },
   "peerDependencies": {
     "@ganon/styled": "0.1.0",
+    "@ganon/theme": "0.0.1",
+    "@ganon/theme-utils": "0.0.1",
     "styled-system": "^5.1.5",
     "react": ">=16.8.6"
   }

@@ -1,6 +1,6 @@
 {
   "name": "@ganon/button",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -32,18 +32,18 @@
     "lint:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ganon/styled": "0.1.0",
-    "@ganon/theme": "0.0.1",
-    "@ganon/theme-utils": "0.0.1",
+    "@ganon/styled": "0.2.0",
+    "@ganon/theme": "0.1.0",
+    "@ganon/theme-utils": "1.0.0",
     "react": "^17.0.2"
   },
   "dependencies": {
     "polished": "^4.1.3"
   },
   "peerDependencies": {
-    "@ganon/styled": "0.1.0",
-    "@ganon/theme": "0.0.1",
-    "@ganon/theme-utils": "0.0.1",
+    "@ganon/styled": "0.2.0",
+    "@ganon/theme": "0.1.0",
+    "@ganon/theme-utils": "1.0.0",
     "styled-system": "^5.1.5",
     "react": ">=16.8.6"
   }

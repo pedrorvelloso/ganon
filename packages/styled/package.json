@@ -1,6 +1,6 @@
 {
   "name": "@ganon/styled",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -31,7 +31,7 @@
     "lint:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@ganon/theme": "0.0.1"
+    "@ganon/theme": "0.1.0"
   },
   "peerDependencies": {
     "styled-system": "^5.1.5",

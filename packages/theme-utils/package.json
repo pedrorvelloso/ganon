@@ -1,7 +1,7 @@
 {
   "name": "@ganon/theme-utils",
   "description": "Theme utilities",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -32,11 +32,11 @@
     "lint:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ganon/theme": "0.0.1",
+    "@ganon/theme": "0.1.0",
     "react": "^17.0.2"
   },
   "peerDependencies": {
-    "@ganon/theme": "0.0.1",
+    "@ganon/theme": "0.1.0",
     "styled-system": "^5.1.5",
     "react": ">=16.8.6"
   }

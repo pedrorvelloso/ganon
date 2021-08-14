@@ -1,6 +1,6 @@
 {
   "name": "@ganon/core",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React UI components for speedrun websites",
   "license": "MIT",
   "main": "dist/cjs/index.js",
@@ -33,9 +33,9 @@
     "lint:types": "tsc --noEmit"
   },
   "dependencies": {
-    "@ganon/button": "0.1.0",
-    "@ganon/styled": "0.1.0",
-    "@ganon/theme": "0.0.1"
+    "@ganon/button": "1.0.0",
+    "@ganon/styled": "0.2.0",
+    "@ganon/theme": "0.1.0"
   },
   "peerDependencies": {
     "styled-system": "^5.1.5",

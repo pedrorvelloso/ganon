@@ -1,7 +1,6 @@
-# @ganon/styled
+# @ganon/theme-utils
 
-## 0.2.0
-
+## 1.0.0
 ### Minor Changes
 
 - update theme handling
@@ -10,9 +9,3 @@
 
 - Updated dependencies [undefined]
   - @ganon/theme@0.1.0
-
-## 0.1.0
-
-### Minor Changes
-
-- create css reset for applications

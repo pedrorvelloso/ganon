@@ -1,4 +1,6 @@
 import React from 'react'
+import { FiTwitch, FiMessageCircle } from 'react-icons/fi'
+
 import { Button } from '../src'
 
 export default {
@@ -8,37 +10,36 @@ export default {
 
 export const basicUsage = () => (
   <>
-    <Button transformTextUppercase>Button</Button>
-    <Button variant="secondary" mt="4">
-      Button
-    </Button>
-    <Button variant="success" mt="4">
-      Button
-    </Button>
-    <Button variant="warning" mt="4">
-      Button
-    </Button>
-    <Button variant="danger" mt="4">
-      Button
-    </Button>
+    <Button>Button</Button>
+    <Button colorScheme="secondary">Button</Button>
+    <Button colorScheme="success">Button</Button>
+    <Button colorScheme="warning">Button</Button>
+    <Button colorScheme="danger">Button</Button>
   </>
 )
 
 export const disabled = () => (
   <>
-    <Button transformTextUppercase disabled>
+    <Button disabled>Button</Button>
+    <Button colorScheme="secondary" disabled>
       Button
     </Button>
-    <Button variant="secondary" disabled mt="4">
+    <Button colorScheme="success" disabled>
       Button
     </Button>
-    <Button variant="success" disabled mt="4">
+    <Button colorScheme="warning" disabled>
       Button
     </Button>
-    <Button variant="warning" disabled mt="4">
+    <Button colorScheme="danger" disabled>
       Button
     </Button>
-    <Button variant="danger" disabled mt="4">
+  </>
+)
+
+export const withIcon = () => (
+  <>
+    <Button rightIcon={<FiTwitch size={25} />}>Button</Button>
+    <Button leftIcon={<FiMessageCircle />} colorScheme="secondary">
       Button
     </Button>
   </>

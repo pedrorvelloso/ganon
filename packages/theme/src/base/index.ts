@@ -1,7 +1,6 @@
 import { colors } from './colors'
-import { buttons } from './buttons'
 
-const base = { colors, buttons }
+const base = { colors }
 
 export * from './colors.type'
 export * from './buttons'

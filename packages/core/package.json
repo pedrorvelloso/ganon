@@ -35,6 +35,7 @@
   "dependencies": {
     "@ganon/button": "0.1.0",
     "@ganon/styled": "0.1.0",
+    "@ganon/spinner": "0.1.0",
     "@ganon/theme": "0.1.0"
   },
   "peerDependencies": {

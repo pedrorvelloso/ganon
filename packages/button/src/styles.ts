@@ -8,26 +8,33 @@ import {
 } from 'styled-system'
 
 import styled from '@ganon/styled'
-import { ButtonsVariant } from '@ganon/theme'
 
-import { buttonVariant } from './variants'
+import {
+  buttonColorVariant,
+  buttonSizeVariant,
+  buttonVariant,
+} from './variants'
+import { ButtonColorScheme, ButtonSize, ButtonVariant } from './variants.type'
 
 export type ButtonBaseProps = MarginProps &
   DisplayProps &
   BorderRadiusProps & {
     transformTextUppercase?: boolean
-    colorScheme?: ButtonsVariant
+    colorScheme?: ButtonColorScheme
+    size?: ButtonSize
+    variant?: ButtonVariant
   }
 
 export const ButtonBase = styled.button<ButtonBaseProps>`
+  ${buttonColorVariant}
+  ${buttonSizeVariant}
   ${buttonVariant}
 
   border-radius: 5px;
 
   font-weight: bold;
 
-  padding: 16px 26px;
-  max-height: 52px;
+  padding: 0 16px;
 
   display: flex;
   align-items: center;

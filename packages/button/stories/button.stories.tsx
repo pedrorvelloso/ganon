@@ -18,6 +18,18 @@ export const basicUsage = () => (
   </>
 )
 
+export const sizes = () => (
+  <>
+    <Button size="sm">Button</Button>
+    <Button colorScheme="secondary" size="md">
+      Button
+    </Button>
+    <Button colorScheme="success" size="lg">
+      Button
+    </Button>
+  </>
+)
+
 export const disabled = () => (
   <>
     <Button disabled>Button</Button>
@@ -38,8 +50,21 @@ export const disabled = () => (
 
 export const withIcon = () => (
   <>
-    <Button rightIcon={<FiTwitch size={25} />}>Button</Button>
+    <Button rightIcon={<FiTwitch size={20} />}>Button</Button>
     <Button leftIcon={<FiMessageCircle />} colorScheme="secondary">
+      Button
+    </Button>
+  </>
+)
+
+export const loading = () => <Button isLoading>Button</Button>
+
+export const variants = () => (
+  <>
+    <Button colorScheme="secondary" variant="outline">
+      Button
+    </Button>
+    <Button colorScheme="danger" variant="link">
       Button
     </Button>
   </>

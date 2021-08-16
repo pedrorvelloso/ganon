@@ -64,7 +64,7 @@ export const variants = () => (
     <Button colorScheme="secondary" variant="outline">
       Button
     </Button>
-    <Button colorScheme="danger" variant="link">
+    <Button colorScheme="danger" variant="ghost">
       Button
     </Button>
   </>

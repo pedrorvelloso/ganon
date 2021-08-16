@@ -11,4 +11,4 @@ export type ButtonSizeProp = 'size'
 
 export type ButtonSize = 'sm' | 'md' | 'lg'
 
-export type ButtonVariant = 'outline' | 'ghost' | 'link'
+export type ButtonVariant = 'outline' | 'ghost'

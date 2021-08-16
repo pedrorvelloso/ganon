@@ -17,11 +17,7 @@ export const buttonColorVariant = ({
   variant: buttonVariant,
 }: DefaultGanonTheme & ButtonBaseProps) => {
   const colorWithVariant = (color: string, fallback: string) =>
-    buttonVariant === 'outline' ||
-    buttonVariant === 'ghost' ||
-    buttonVariant === 'link'
-      ? color
-      : fallback
+    buttonVariant === 'outline' || buttonVariant === 'ghost' ? color : fallback
 
   return variant<
     DefaultVariantStyles,
@@ -36,7 +32,7 @@ export const buttonColorVariant = ({
         borderColor: 'primary',
         ':hover:enabled': {
           bg: 'primary',
-          color: colorWithVariant(theme.colors.primary, 'white'),
+          color: 'white',
         },
       },
       secondary: {
@@ -45,7 +41,7 @@ export const buttonColorVariant = ({
         borderColor: 'secondary',
         ':hover:enabled': {
           bg: 'secondary',
-          color: colorWithVariant(theme.colors.secondary, 'white'),
+          color: 'white',
         },
       },
       success: {
@@ -54,7 +50,7 @@ export const buttonColorVariant = ({
         borderColor: 'success',
         ':hover:enabled': {
           bg: 'success',
-          color: colorWithVariant(theme.colors.success, 'white'),
+          color: 'white',
         },
       },
       danger: {
@@ -63,7 +59,7 @@ export const buttonColorVariant = ({
         borderColor: 'danger',
         ':hover:enabled': {
           bg: 'danger',
-          color: colorWithVariant(theme.colors.danger, 'white'),
+          color: 'white',
         },
       },
       warning: {
@@ -89,14 +85,6 @@ export const buttonVariant = () =>
         borderColor: 'transparent',
         bg: 'transparent',
       },
-      link: {
-        bg: 'transparent',
-        borderColor: 'transparent',
-        ':hover:enabled': {
-          bg: 'transparent',
-          textDecoration: 'underline',
-        },
-      },
     },
   })
 
@@ -106,11 +94,11 @@ export const buttonSizeVariant = () =>
     variants: {
       sm: {
         height: '32px',
-        fontSize: '14px',
+        fontSize: 1,
       },
       md: {
         height: '40px',
-        fontSize: '16px',
+        fontSize: '1rem',
       },
       lg: {
         height: '48px',

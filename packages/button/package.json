@@ -32,7 +32,7 @@
     "lint:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ganon/styled": "0.2.0",
+    "@ganon/styled": "0.1.0",
     "@ganon/theme": "0.1.0",
     "react": "^17.0.2"
   },

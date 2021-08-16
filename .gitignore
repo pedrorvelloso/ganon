@@ -102,3 +102,5 @@ yarn-error.log
 .yarn-integrity
 
 report.*
+
+.npmrc

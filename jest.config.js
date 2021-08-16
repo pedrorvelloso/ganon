@@ -7,6 +7,7 @@ module.exports = {
   },
   transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'],
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  coveragePathIgnorePatterns: ['node_modules', 'dist'],
   globals: {
     'ts-jest': {
       tsconfig: 'tsconfig.json',

@@ -39,3 +39,7 @@ export default function Home() {
   )
 }
 ```
+
+## Usage with Next
+
+The project is build with styled-components! You need to set it up correctly with Next. Follow [this page](https://styled-components.com/docs/advanced#nextjs) to set it up.

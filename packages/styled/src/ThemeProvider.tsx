@@ -1,8 +1,13 @@
 import React from 'react'
 import { ThemeProvider as StyledProvider } from 'styled-components'
 
-import { theme } from '@ganon/theme'
+import { Theme } from '@ganon/theme'
 
-export const ThemeProvider: React.FC = ({ children }) => (
-  <StyledProvider theme={theme}>{children}</StyledProvider>
-)
+interface ThemeProviderProps {
+  theme?: Theme
+}
+
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({
+  theme,
+  children,
+}) => <StyledProvider theme={theme}>{children}</StyledProvider>

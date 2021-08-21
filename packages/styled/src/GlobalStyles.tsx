@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+import { DefaultGanonTheme } from '@ganon/theme'
 
 import { CssReset } from './CssReset'
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle<DefaultGanonTheme>`
     ${CssReset}
 
     * {
@@ -11,5 +12,6 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
       font-size: 16px;
+      background: ${({ theme }) => theme.colors.background};
     }
 `

@@ -22,6 +22,7 @@
   },
   "scripts": {
     "prebuild": "rimraf dist",
+    "start": "nodemon --watch src --exec yarn build -e ts,tsx",
     "build": "concurrently yarn:build:*",
     "test": "jest --env=jsdom --passWithNoTests",
     "lint": "concurrently yarn:lint:*",
@@ -39,15 +40,15 @@
     "@ganon/theme-utils": "0.1.2"
   },
   "peerDependencies": {
-    "styled-system": "^5.1.5",
     "react": ">=16.8.6",
+    "react-dom": ">=16.8.6",
     "styled-components": "^5.3.0",
-    "react-dom": ">=16.8.6"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
-    "styled-system": "^5.1.5",
-    "styled-components": "^5.3.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0",
+    "styled-system": "^5.1.5"
   }
 }

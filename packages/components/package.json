@@ -21,6 +21,7 @@
   },
   "scripts": {
     "prebuild": "rimraf dist",
+    "start": "nodemon --watch src --exec yarn build -e ts,tsx",
     "build": "concurrently yarn:build:*",
     "test": "jest --env=jsdom --passWithNoTests",
     "lint": "concurrently yarn:lint:*",
@@ -33,17 +34,17 @@
     "test:cov": "yarn test --coverage"
   },
   "devDependencies": {
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "styled-system": "^5.1.5"
   },
   "dependencies": {
+    "@ganon/spinner": "0.1.1",
     "@ganon/styled": "0.1.2",
     "@ganon/theme": "0.1.2",
-    "@ganon/spinner": "0.1.1",
     "polished": "^4.1.3"
   },
   "peerDependencies": {
-    "@ganon/styled": ">=0.1.2",
-    "styled-system": "^5.1.5",
-    "react": ">=16.8.6"
+    "react": ">=16.8.6",
+    "styled-system": "^5.1.5"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "@ganon/layout",
   "description": "Layout components",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -32,12 +32,12 @@
     "lint:types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@ganon/styled": "0.1.0",
+    "@ganon/styled": "0.1.2",
     "react": "^17.0.2"
   },
   "dependencies": {},
   "peerDependencies": {
-    "@ganon/styled": "0.0.1",
+    "@ganon/styled": "0.1.2",
     "styled-system": "^5.1.5",
     "react": ">=16.8.6"
   }

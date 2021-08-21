@@ -23,6 +23,17 @@ export const VStack: React.FC<Omit<StackProps, 'direction'>> = ({
   children,
 }) => {
   return (
+    <Stack direction="column" spacing={spacing}>
+      {children}
+    </Stack>
+  )
+}
+
+export const HStack: React.FC<Omit<StackProps, 'direction'>> = ({
+  spacing = '0.5rem',
+  children,
+}) => {
+  return (
     <Stack direction="row" spacing={spacing}>
       {children}
     </Stack>

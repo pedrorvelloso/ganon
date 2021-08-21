@@ -6,7 +6,7 @@ import { Stack } from '@ganon/layout'
 import { Button } from '../src'
 
 export default {
-  title: 'Button',
+  title: 'Button > Component',
   component: Button,
 }
 

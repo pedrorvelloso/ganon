@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react'
-import { Spinner } from '@ganon/spinner'
+import { Spinner } from '..'
 
 import { ButtonBase, ButtonIcon, ButtonBaseProps } from './styles'
 

@@ -2,9 +2,10 @@ import React, { ReactElement } from 'react'
 
 import { render, RenderOptions } from '@testing-library/react'
 import { ThemeProvider } from '@ganon/core'
+import { theme } from '@ganon/theme'
 
 const Providers: React.FC = ({ children }) => {
-  return <ThemeProvider>{children}</ThemeProvider>
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }
 
 const customRender = (

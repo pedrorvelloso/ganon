@@ -71,6 +71,15 @@ export const buttonColorVariant = ({
           bg: 'warning',
         },
       },
+      default: {
+        color: colorWithVariant(theme.colors.gray[300], 'white'),
+        bg: darken(0.41, theme.colors.gray[300]),
+        borderColor: 'gray.300',
+        ':hover:enabled': {
+          bg: 'gray.300',
+          color: 'white',
+        },
+      },
     },
   })
 }

@@ -4,10 +4,18 @@ import { Spinner } from '@ganon/spinner'
 import { ButtonBase, ButtonIcon, ButtonBaseProps } from './styles'
 
 export interface ButtonOptions {
+  /**
+   * Display left icon
+   */
   leftIcon?: React.ReactElement
+  /**
+   * Display right icon
+   */
   rightIcon?: React.ReactElement
+  /**
+   * Set button to loading state
+   */
   isLoading?: boolean
-  size?: 'sm' | 'md' | 'lg'
 }
 
 export type ButtonProps = ButtonBaseProps &
@@ -44,5 +52,5 @@ export const Button: React.FC<ButtonProps> = ({
 }
 
 Button.defaultProps = {
-  colorScheme: 'primary',
+  colorScheme: 'default',
 }

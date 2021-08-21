@@ -6,6 +6,7 @@ export type ButtonColorScheme =
   | 'success'
   | 'danger'
   | 'warning'
+  | 'default'
 
 export type ButtonSizeProp = 'size'
 

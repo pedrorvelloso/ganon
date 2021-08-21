@@ -17,3 +17,14 @@ export const Stack: React.FC<StackProps> = ({
     </StackBase>
   )
 }
+
+export const VStack: React.FC<Omit<StackProps, 'direction'>> = ({
+  spacing = '0.5rem',
+  children,
+}) => {
+  return (
+    <Stack direction="row" spacing={spacing}>
+      {children}
+    </Stack>
+  )
+}

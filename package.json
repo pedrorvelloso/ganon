@@ -5,6 +5,11 @@
     "packages/*"
   ],
   "scripts": {
+    "prestart": "yarn && yarn bootstrap",
+    "start": "yarn storybook",
+    "pkg": "manypkg run",
+    "pkgs:check": "manypkg check",
+    "pkgs:fix": "manypkg fix",
     "version:pkgs": "changeset version",
     "release": "changeset publish",
     "build": "lerna run build --ignore @ganon/test-utils",
@@ -17,7 +22,7 @@
     "create:package": "ts-node scripts/createPackage.ts",
     "prepare": "husky install"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
@@ -26,6 +31,7 @@
     "@babel/preset-typescript": "^7.15.0",
     "@babel/runtime": "^7.15.3",
     "@changesets/cli": "^2.16.0",
+    "@manypkg/cli": "^0.18.0",
     "@storybook/addon-actions": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/addon-links": "^6.3.7",

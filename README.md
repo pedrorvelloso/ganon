@@ -13,6 +13,18 @@ yarn add @ganon/core styled-components styled-system
 npm i @ganon/core styled-components styled-system
 ```
 
+### Typescript
+
+Install types from styled-components and styled-system
+
+```sh
+yarn add @types/styled-system @types/styled-components -D
+
+# or
+
+npm i @types/styled-system @types/styled-components --save-dev
+```
+
 ## Usage
 
 Wrap your component using `GanonProvider`

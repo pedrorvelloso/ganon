@@ -6,6 +6,7 @@ export type ColorsType =
   | 'success'
   | 'warning'
   | 'danger'
+  | 'background'
   | 'gray.50'
   | 'gray.100'
   | 'gray.200'

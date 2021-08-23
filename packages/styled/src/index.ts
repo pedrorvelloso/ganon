@@ -13,4 +13,6 @@ export const keyframes = _keyframes
 export * from './ThemeProvider'
 export * from './GlobalStyles'
 
+export * from './System.type'
+
 export default styled

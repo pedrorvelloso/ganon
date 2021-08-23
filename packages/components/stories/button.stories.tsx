@@ -6,7 +6,7 @@ import { VStack } from '@ganon/layout'
 import { Button } from '../src'
 
 export default {
-  title: 'Button',
+  title: 'Design System/Components/Button',
   component: Button,
 }
 

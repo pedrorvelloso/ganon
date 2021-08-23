@@ -1,10 +1,14 @@
 import React from 'react'
 import { FiActivity, FiTwitch } from 'react-icons/fi'
-import { render, fireEvent } from '@ganon/test-utils'
+import { render, fireEvent, a11y } from '@ganon/test-utils'
 
 import { Button } from '../src'
 
 describe('components >> Button', () => {
+  it('should pass a11y test', async () => {
+    await a11y(<Button>Button</Button>)
+  })
+
   it('should render without crashing', () => {
     const { getByText } = render(<Button>Button</Button>)
 

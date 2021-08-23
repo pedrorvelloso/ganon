@@ -10,5 +10,7 @@ export const StackBase = styled.div<StackBaseProps>`
   display: flex;
   align-items: baseline;
 
+  width: fit-content;
+
   ${stackVariant}
 `

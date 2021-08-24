@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div>
       Important content here!
-      <Button variant="primary">Button</Button>
+      <Button colorScheme="primary">Button</Button>
     </div>
   )
 }

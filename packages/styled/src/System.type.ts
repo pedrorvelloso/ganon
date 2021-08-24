@@ -7,3 +7,15 @@ export interface ColorProps {
   bg?: ColorsType | CSS.Property.Color
   backgroundColor?: ColorsType | CSS.Property.Color
 }
+
+export interface BorderColorProps {
+  borderColor?: ColorsType | CSS.Property.Color
+}
+
+export interface TextTransformProps {
+  textTransform?: CSS.Property.TextTransform
+}
+
+export interface TruncateProps {
+  isTruncated?: boolean
+}

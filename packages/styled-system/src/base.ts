@@ -39,7 +39,7 @@ export const resolveScale = (
   if (Array.isArray(value)) {
     const updatedValues = value.map((v) => {
       if (typeof v === 'number') return scale[v]
-      if (typeof v === 'string' && !v.includes('px')) return scale[v]
+      if (typeof v === 'string' && !!parseInt(v, 10)) return scale[v]
 
       return v
     })
@@ -49,7 +49,7 @@ export const resolveScale = (
 
   return resolveMediaQueries(
     typeof value === 'number' ||
-      (typeof value === 'string' && !value.includes('px'))
+      (typeof value === 'string' && !!parseInt(value, 10))
       ? scale[value]
       : value,
     property,

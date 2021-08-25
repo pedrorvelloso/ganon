@@ -41,12 +41,17 @@ const aliases = {
 }
 
 export type MarginProps = {
-  [key in MarginAliases]?: ResponsiveToken<CSS.Property.Margin | number>
+  [key in
+    | MarginAliases
+    | 'mx'
+    | 'my'
+    | 'marginX'
+    | 'marginY']?: ResponsiveToken<CSS.Property.Margin | number>
 }
 
 const resolveMargins = (
   value: ResponsiveToken<CSS.Property.Margin | number>,
-  whichMargin: string,
+  whichMargin: MarginAliases,
 ) => resolveScale(value, aliases[whichMargin], marginScale)
 
 export const margin = ({
@@ -60,6 +65,10 @@ export const margin = ({
   marginRight,
   ml,
   marginLeft,
+  mx,
+  marginX,
+  my,
+  marginY,
 }: MarginProps) => css`
   ${(m && resolveMargins(m, 'm')) || (mrg && resolveMargins(mrg, 'm'))};
   ${(mt && resolveMargins(mt, 'mt')) ||
@@ -70,4 +79,24 @@ export const margin = ({
   (marginRight && resolveMargins(marginRight, 'mr'))};
   ${(ml && resolveMargins(ml, 'ml')) ||
   (marginLeft && resolveMargins(marginLeft, 'ml'))};
+  ${mx &&
+  css`
+    ${resolveMargins(mx, 'ml')};
+    ${resolveMargins(mx, 'mr')};
+  `};
+  ${marginX &&
+  css`
+    ${resolveMargins(marginX, 'ml')};
+    ${resolveMargins(marginX, 'mr')};
+  `};
+  ${my &&
+  css`
+    ${resolveMargins(my, 'mt')};
+    ${resolveMargins(my, 'mb')};
+  `};
+  ${marginY &&
+  css`
+    ${resolveMargins(marginY, 'mt')};
+    ${resolveMargins(marginY, 'mb')};
+  `};
 `
